@@ -1,0 +1,80 @@
+body {
+  font-weight: bold;
+  margin: 0;
+  background-color: tomato;
+
+}
+
+/* header, nav, aside {
+  border: 1px solid black;
+} */
+
+@media all and (max-width: 319px) {
+  header {
+    background-color: #089C8F;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    background-color: rgba(21, 199, 182, 0.59);
+    color: #fff;
+    height: 45px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .image_pres {
+    height: 316px;
+  }
+  .image_pres > img {
+    width: 100%;
+    height: 100%;
+  }
+  .div_superp {
+    margin: 0 15px 0 15px;
+    padding: 15px 15px 30px;
+    position: absolute;
+    top: 387px;
+    background-color: #fff;
+  }
+  .claim p {
+    margin: 0 0 15px;
+  }
+  .div_superp .title {
+    padding: 30px 0 15px 0;
+    text-align: center;
+    font-weight: 900;
+    color: #009889;
+  }
+  .team_p {
+    color: #9D9FA0;
+    text-align: center;
+  }
+  .team_p .parrafo_1 p {
+    margin: 0;
+  }
+  .team_p .parrafo_2 p {
+    margin-bottom: 0;
+  }
+  .aside_gris {
+    background-color: #F2F2F3;
+    margin: 0 15px 0 15px;
+    padding: 30px 15px 45px;
+    position: absolute;
+    top: 781px;
+  }
+  .aside_gris .fortalezas_title {
+    text-align: center;
+    font-weight: 900;
+    color: #009889;
+  }
+  .fortalezas_p {
+    color: #9D9FA0;
+    text-align: center;
+  }
+
+}
