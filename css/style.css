@@ -34,7 +34,7 @@ body {
     width: 100%;
     height: 100%;
   }
-  .div_superp {
+  .target {
     margin: 0 15px 0 15px;
     padding: 15px 15px 30px;
     position: absolute;
@@ -44,7 +44,7 @@ body {
   .claim p {
     margin: 0 0 15px;
   }
-  .div_superp .title {
+  .equipo .title {
     padding: 30px 0 15px 0;
     text-align: center;
     font-weight: 900;
@@ -60,21 +60,105 @@ body {
   .team_p .parrafo_2 p {
     margin-bottom: 0;
   }
-  .aside_gris {
+  .target_dos {
     background-color: #F2F2F3;
     margin: 0 15px 0 15px;
-    padding: 30px 15px 45px;
+    padding: 0px 15px 45px;
     position: absolute;
-    top: 781px;
+    top: 796px;
   }
-  .aside_gris .fortalezas_title {
+  .fortalezas, .debilidades {
+    margin-top: 30px;
+    padding-top: 5px;
+  }
+  .fortalezas_title, .debilidades_title  {
     text-align: center;
     font-weight: 900;
     color: #009889;
   }
-  .fortalezas_p {
+  .fortalezas_p, .debilidades_p {
     color: #9D9FA0;
     text-align: center;
+  }
+  .target_tres {
+    background-color: #fff;
+    margin: 0 15px 0 15px;
+    padding: 0px 15px 45px;
+    position: absolute;
+    top: 1247px;
+  }
+  .somos .title {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .perfil {
+    margin: 30px auto 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .image_perfil {
+    width: 180px;
+    height: 180px;
+    border: 4px solid #ECECED;
+    border-radius: 8px;
+  }
+  .name {
+    text-align: center;
+  }
+  .datos {
+    color: #9D9FA0;
+    text-align: center;
+  }
+  .redes {
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+  }
+  .redes span {
+    color: red;
+  }
+  .red a{
+    color: #009889;
+  }
+  .span {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+  }
+  hr {
+    margin-top: 45px;
+    color: #BABABB;
+  }
+  footer {
+    background-color: #fff;
+    margin: 30px 15px 0 15px;
+    padding: 0px 15px 0;
+    position: absolute;
+    top: 1791px;
+    width: 81.25vw;
+    text-align: center;
+  }
+  .name_team {
+    color: #CBCBCC;
+  }
+  .links {
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .links a {
+    color: #9D9FA0;
+    text-decoration: none;
   }
 
 }
