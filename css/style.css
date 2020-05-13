@@ -1,164 +1,155 @@
 body {
   font-weight: bold;
   margin: 0;
-  background-color: tomato;
-
 }
-
-/* header, nav, aside {
-  border: 1px solid black;
-} */
 
 @media all and (max-width: 319px) {
   header {
-    background-color: #089C8F;
-    color: #fff;
-    height: 60px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: #099d8d;
+    color: #ffffff;
+    display: flex;
+    height: 60px;
+    justify-content: center;
   }
   nav {
-    background-color: rgba(21, 199, 182, 0.59);
-    color: #fff;
-    height: 45px;
+    align-items: center;
+    background-color: #14d9c4;
+    color: #ffffff;
     display: flex;
     flex-flow: row nowrap;
+    height: 45px;
     justify-content: space-around;
-    align-items: center;
   }
   .image_pres {
     height: 316px;
   }
   .image_pres > img {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
-  .target {
-    margin: 0 15px 0 15px;
-    padding: 15px 15px 30px;
+  .container_uno {
+    background-color: #ffffff;
+    margin: 0 15px 30px 15px;
+    padding: 15px 15px 0;
+    position: static;
+  }
+  .container {
     position: absolute;
     top: 387px;
-    background-color: #fff;
   }
   .claim p {
     margin: 0 0 15px;
   }
-  .equipo .title {
-    padding: 30px 0 15px 0;
-    text-align: center;
-    font-weight: 900;
-    color: #009889;
+  .equipo {
+    padding-top: 30px;
   }
-  .team_p {
-    color: #9D9FA0;
+  .equipo .title, .fortalezas_title, .debilidades_title{
+    color: #009889;
+    font-weight: 900;
+    text-align: center;
+  }
+  .team_p, .fortalezas_p, .debilidades_p, .datos {
+    color: #54585a;
     text-align: center;
   }
   .team_p .parrafo_1 p {
-    margin: 0;
+    margin-top: 15px;
   }
-  .team_p .parrafo_2 p {
-    margin-bottom: 0;
+  .triangle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
   }
-  .target_dos {
-    background-color: #F2F2F3;
-    margin: 0 15px 0 15px;
-    padding: 0px 15px 45px;
-    position: absolute;
-    top: 796px;
+  .triangle-down {
+    border-left: 15px solid transparent;
+    border-top: 25px solid #fff;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 0;
+  }
+  .container_dos {
+    background-color: #f1f1f1;
+    padding: 0px 30px 45px;
+    position: static;
+  }
+  .fortalezas {
+    margin-bottom: 30px;
   }
   .fortalezas, .debilidades {
-    margin-top: 30px;
     padding-top: 5px;
   }
-  .fortalezas_title, .debilidades_title  {
-    text-align: center;
-    font-weight: 900;
-    color: #009889;
-  }
-  .fortalezas_p, .debilidades_p {
-    color: #9D9FA0;
-    text-align: center;
-  }
-  .target_tres {
+  .container_tres {
     background-color: #fff;
     margin: 0 15px 0 15px;
     padding: 0px 15px 45px;
-    position: absolute;
-    top: 1247px;
+    position: static;
   }
   .somos .title {
-    text-align: center;
-    margin-top: 30px;
     font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
   }
   .perfil {
-    margin: 30px auto 15px;
     display: flex;
+    margin: 30px auto 15px;
     justify-content: center;
   }
   .image_perfil {
-    width: 180px;
-    height: 180px;
     border: 4px solid #ECECED;
     border-radius: 8px;
+    height: 180px;
+    width: 180px;
   }
   .name {
     text-align: center;
   }
-  .datos {
-    color: #9D9FA0;
-    text-align: center;
-  }
   .redes {
-    margin: auto;
-    border: 1px solid black;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
+    margin: auto;
     width: 70vw;
   }
-  .redes span {
-    color: red;
+  .punto {
+    color: #009889;
+    position: relative;
+    text-align: center;
+    transform: translateY(-25%);
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
   }
   .red a{
     color: #009889;
   }
-  .span {
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-  }
   hr {
+    color: #b8b8b9;
     margin-top: 45px;
-    color: #BABABB;
   }
   footer {
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 30px 15px 0 15px;
     padding: 0px 15px 0;
     position: absolute;
+    text-align: center;
     top: 1791px;
     width: 81.25vw;
-    text-align: center;
   }
   .name_team {
-    color: #CBCBCC;
+    color: #b8b8b9;
   }
   .links {
     display: flex;
     flex-flow: column;
-    margin-top: 20px;
     margin-bottom: 30px;
+    margin-top: 20px;
   }
   nav a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
   }
   .links a {
-    color: #9D9FA0;
+    color: #54585a;
     text-decoration: none;
   }
-
 }
