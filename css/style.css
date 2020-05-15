@@ -1,5 +1,5 @@
 body {
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   /* background-color: tomato; */
 }
@@ -54,7 +54,7 @@ body {
     background-color: #ffffff;
     color: #000000;
     font-size: 18px;
-    font-face: 'OpenSans-SemiBold';
+    /* font-family: 'Open Sans', sans-serif; */
   }
   .claim p {
     margin: 0 0 15px;
@@ -171,57 +171,54 @@ body {
 
 
 @media all and (min-width: 768px) and (max-width: 1200px){
-  .head_container {
+  .container_head {
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    height: auto;
-    /* position: absolute; */
+    color: #ffffff;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-size: 16px;
+    height: 421px;
+  }
+  .head {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px 0;
+    position: relative;
+    top: -421px;
+    background-color: rgba(9, 157, 141, 0.85);
+    min-height: 60px;
   }
   .image_pres {
     height: 421px;
     width: 100%;
   }
-  .head {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 1px solid red; */
-    width: -moz-available;
-    height: 60px;
-    background-color: rgba(9, 157, 141, 0.95);
-    color: #ffffff;
-    padding: 0 45px 0;
-  }
-  header {
-    display: flex;
-    flex-flow: row;
-  }
   nav {
-    /* border: 1px solid black; */
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: row;
     width: 50%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav li {
+    list-style: none;
+    margin-left: 5px;
   }
   nav a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
   }
   .claim {
-    /* border: 1px solid black; */
     display: inline-block;
     padding: 15px 30px 15px;
     margin: 0 0 0 45px;
     background-color: rgba(255, 255, 255, 0.5);
     color: #000000;
-    font-size: 18px;
-    font-face: 'OpenSans-SemiBold';
+    font-size: 24px;
+    font-family: 'OpenSans-SemiBold', sans-serif;
     position: absolute;
-    top: 355px;
+    top: 328px;
     width: 441px;
   }
   .claim p {
@@ -229,27 +226,24 @@ body {
   }
   .container {
     position: relative;
-    /* top: 441px; */
-    /* border: 1px solid purple; */
   }
   .container_uno {
-    /* background-color: #ffffff; */
     margin: 45px 15px 60px 45px;
     padding: 0 15px 0 0;
-    /* position: relative;
-    top: -34px; */
   }
 
   .equipo {
-    /* padding-top: 30px; */
   }
   .equipo .title, .fortalezas_title, .debilidades_title{
-    color: #009889;
-    font-weight: 900;
+    color: #099D8D;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-size: 22px;
     text-align: center;
   }
   .team_p, .fortalezas_p, .debilidades_p, .datos {
-    color: #54585a;
+    color: #54585A;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
     text-align: center;
   }
   .team_p .parrafo_1 p {
@@ -258,7 +252,7 @@ body {
   .triangle {
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
   .triangle-down {
     border-left: 15px solid transparent;
@@ -269,9 +263,7 @@ body {
   }
   .container_dos {
     background-color: #f1f1f1;
-    padding: 0px 30px 45px;
-    position: relative;
-    /* top: -34px; */
+    padding: 0px 30px 60px;
   }
   .for_deb {
     display: flex;
@@ -290,72 +282,97 @@ body {
   }
   .container_tres {
     background-color: #fff;
-    margin: 30px 15px 0 15px;
+    margin: 45px 15px 0 15px;
     padding: 0px 15px 0px;
-    position: relative;
-    top: -34px;
   }
-  .somos .title {
-    font-weight: bold;
-    /* margin-top: 30px; */
+  .container_tres .title {
     text-align: center;
+    color: #099D8D;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
   }
-  .perfil {
+  .date_person {
     display: flex;
-    margin: 30px auto 15px;
-    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 10px;
+    margin: 45px 0 60px;
+  }
+  .photo_perfil {
+    display: flex;
+    margin-right: 30px;
+    justify-content: flex-end;
   }
   .image_perfil {
     border: 4px solid #ECECED;
     border-radius: 8px;
-    height: 180px;
-    width: 180px;
+    height: 205px;
+    width: 205px;
+  }
+  .person {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
   }
   .name {
-    text-align: center;
+    text-align: left;
+    color: #000000;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 20px;
+  }
+  .datos p {
+    margin: 0;
+    text-align: left;
+    color: #54585A;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
   }
   .redes {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    margin: 15px auto 45px;
-    width: 70vw;
+    align-items: center;
+    width: 30vw;
   }
   .punto {
     color: #009889;
+    font-size: 40px;
     position: relative;
     text-align: center;
     transform: translateY(-25%);
     -webkit-transform: translateY(-25%);
     -ms-transform: translateY(-25%);
   }
+  .red {
+    font-size: 35px;
+  }
   .red a{
     color: #009889;
+  }
+  hr {
+    color: #b8b8b9;
   }
   footer {
     background-color: #ffffff;
     margin: 0 15px 0;
-    padding: 30px 15px 0;
-    position: relative;
-    text-align: center;
-    top: -42px;
+    padding: 0 15px 60px;
+    display: flex;
+    justify-content: space-between;
   }
-  hr, .name_team {
-    color: #b8b8b9;
+  .name_team {
+    color: #B8B8B9;
+    margin-top: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
   }
   .links {
     display: flex;
     flex-flow: column;
-    /* padding-bottom: 30px; */
-    margin-top: 20px;
+    margin-top: 17px;
   }
-  nav a {
-    color: #fff;
+  .links a{
     text-decoration: none;
-  }
-  .links a {
-    color: #54585a;
-    text-decoration: none;
+    color: #b8b8b9;
+
   }
 
 }
