@@ -4,71 +4,82 @@ body {
   /* background-color: tomato; */
 }
 
-@media all and (max-width: 767px) {
-  .head_container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
+@media (max-width: 767px) {
   .image_pres {
     height: 421px;
     width: 100%;
   }
-  .head {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-  }
-  header {
-    align-items: center;
-    background-color: rgba(9, 157, 141, 0.95);
+  .container_head {
     color: #ffffff;
     display: flex;
-    height: 60px;
+    flex-flow: column;
+    height: 421px;
+    text-align: center;
+  }
+  .head {
+    display: flex;
+    flex-flow: column ;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-size: 16px;
+    position: relative;
+    top: -421px;
+  }
+  header {
+    background-color: rgba(9, 157, 141, 0.85);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
   nav {
-    align-items: center;
-    background-color: rgba(20, 217, 196, 0.9);
-    color: #ffffff;
+    background-color: rgba(20, 217, 196, 0.85);
     display: flex;
-    flex-flow: row nowrap;
-    height: 45px;
+    flex-flow: row;
     justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    min-height: 45px;
   }
-  .container {
-    position: relative;
-  }
-  .container_uno {
-    background-color: #ffffff;
-    margin: 0 15px 30px 15px;
-    padding: 0 15px 0;
-    position: relative;
-    top: -34px;
+  nav a {
+    color: #fff;
+    text-decoration: none;
   }
   .claim {
     display: inline-block;
-    padding: 15px 0 15px;
+    padding: 15px;
+    margin: 0 15px 30px;
+    position: relative;
+    top: -34px;
     background-color: #ffffff;
     color: #000000;
-    font-size: 18px;
-    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 24px;
+    font-family: 'OpenSans-SemiBold', sans-serif;
   }
   .claim p {
     margin: 0 0 15px;
   }
-  .equipo {
-    padding-top: 30px;
+  .container {
+    position: relative;
+    top: -34px;
+    background-color: #ffffff;
+  }
+  .container_uno {
+    margin: 0 15px 30px 15px;
+    padding: 0 15px 0;
+  }
+  .claim p {
+    margin: 0 0 15px;
   }
   .equipo .title, .fortalezas_title, .debilidades_title{
-    color: #009889;
-    font-weight: 900;
+    color: #099D8D;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-size: 22px;
     text-align: center;
   }
   .team_p, .fortalezas_p, .debilidades_p, .datos {
-    color: #54585a;
+    color: #54585A;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
     text-align: center;
   }
   .team_p .parrafo_1 p {
@@ -89,8 +100,6 @@ body {
   .container_dos {
     background-color: #f1f1f1;
     padding: 0px 30px 45px;
-    position: relative;
-    top: -34px;
   }
   .fortalezas {
     margin-bottom: 30px;
@@ -99,21 +108,27 @@ body {
     padding-top: 5px;
   }
   .container_tres {
-    background-color: #fff;
     margin: 30px 15px 0 15px;
     padding: 0px 15px 0px;
     position: relative;
-    top: -34px;
   }
-  .somos .title {
-    font-weight: bold;
-    /* margin-top: 30px; */
+  .container_tres .title {
     text-align: center;
+    color: #099D8D;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
   }
-  .perfil {
+  .container .title span p {
+    margin-bottom: 0;
+  }
+  .date_person {
     display: flex;
-    margin: 30px auto 15px;
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .photo_perfil {
+    margin-bottom: 15px;
   }
   .image_perfil {
     border: 4px solid #ECECED;
@@ -123,6 +138,16 @@ body {
   }
   .name {
     text-align: center;
+    color: #000000;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 20px;
+  }
+  .datos p {
+    margin: 0;
+    text-align: center;
+    color: #54585A;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
   }
   .redes {
     display: flex;
@@ -130,9 +155,11 @@ body {
     justify-content: space-around;
     margin: 15px auto 45px;
     width: 70vw;
+    font-size: 30px;
   }
   .punto {
     color: #009889;
+    font-size: 40px;
     position: relative;
     text-align: center;
     transform: translateY(-25%);
@@ -142,53 +169,55 @@ body {
   .red a{
     color: #009889;
   }
+  hr {
+    color: #b8b8b9;
+  }
   footer {
     background-color: #ffffff;
     margin: 0 15px 0;
     padding: 30px 15px 0;
-    position: relative;
     text-align: center;
-    top: -42px;
   }
   hr, .name_team {
     color: #b8b8b9;
   }
+  .name_team {
+    color: #B8B8B9;
+    margin-top: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
   .links {
     display: flex;
     flex-flow: column;
-    /* padding-bottom: 30px; */
-    margin-top: 20px;
-  }
-  nav a {
-    color: #fff;
-    text-decoration: none;
+    margin-top: 20px 0 30px;;
   }
   .links a {
     color: #54585a;
     text-decoration: none;
   }
-}  /* @media all and (max-width: 319px) */
+}  /* @media all and (max-width: 767px) */
 
 
-@media all and (min-width: 768px) and (max-width: 1200px){
+@media (min-width: 768px) and (max-width: 1200px){
   .container_head {
+    color: #ffffff;
     display: flex;
     flex-flow: column;
-    color: #ffffff;
     font-family: 'Rubik-Medium', sans-serif;
-    font-size: 16px;
+    font-size: 28px;
     height: 421px;
   }
   .head {
+    align-items: center;
+    background-color: rgba(9, 157, 141, 0.85);
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items: center;
+    min-height: 60px;
     padding: 0 45px 0;
     position: relative;
     top: -421px;
-    background-color: rgba(9, 157, 141, 0.85);
-    min-height: 60px;
   }
   .image_pres {
     height: 421px;
@@ -230,9 +259,6 @@ body {
   .container_uno {
     margin: 45px 15px 60px 45px;
     padding: 0 15px 0 0;
-  }
-
-  .equipo {
   }
   .equipo .title, .fortalezas_title, .debilidades_title{
     color: #099D8D;
@@ -293,6 +319,212 @@ body {
   }
   .date_person {
     display: flex;
+    padding-bottom: 10px;
+    margin: 45px 0 60px;
+  }
+  .photo_perfil {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+  }
+  .image_perfil {
+    border: 4px solid #ECECED;
+    border-radius: 8px;
+    height: 205px;
+    width: 205px;
+  }
+  .person {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .datos {
+    text-align: left;
+  }
+  .datos span {
+    color: #000000;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 20px;
+  }
+  .datos p {
+    margin-top: 10px;
+    color: #54585A;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+  }
+  .redes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+  }
+  .punto {
+    color: #009889;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-25%);
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+  }
+  .red {
+    font-size: 35px;
+  }
+  .red a{
+    color: #009889;
+  }
+  hr {
+    color: #b8b8b9;
+  }
+  footer {
+    background-color: #ffffff;
+    margin: 0 15px 0;
+    padding: 0 15px 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .name_team {
+    color: #54585a;
+    margin-top: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+  }
+  .links {
+    display: flex;
+    flex-flow: column;
+    margin-top: 17px;
+  }
+  .links a{
+    text-decoration: none;
+    color: #54585a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+
+  }
+} /* @media (min-width: 768) and (max-width: 1200)*/
+
+@media (min-width: 1201px) {
+  .container_head {
+    color: #ffffff;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-size: 16px;
+    height: 550px;
+
+  }
+  .head {
+    align-items: center;
+    background-color: rgba(9, 157, 141, 0.85);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    min-height: 60px;
+    position: relative;
+    top: -550px;
+  }
+  .image_pres {
+    height: 550px;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    flex-flow: row;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav li {
+    list-style: none;
+    margin-left: 5px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .claim {
+    display: inline-block;
+    padding: 15px 30px 15px;
+    margin: 0 0 0 8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-size: 24px;
+    font-family: 'OpenSans-SemiBold', sans-serif;
+    position: absolute;
+    top: 450px;
+    width: 441px;
+  }
+  .claim p {
+    margin: 0 0 15px;
+  }
+  .container {
+    position: relative;
+  }
+  .container_uno {
+    margin: 45px 18rem 60px;
+    padding: 0 15px 0 0;
+  }
+  .equipo .title, .fortalezas_title, .debilidades_title{
+    color: #099D8D;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
+  .team_p, .fortalezas_p, .debilidades_p, .datos {
+    color: #54585A;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  .team_p .parrafo_1 p {
+    margin-top: 15px;
+  }
+  .triangle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .triangle-down {
+    border-left: 15px solid transparent;
+    border-top: 25px solid #fff;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 0;
+  }
+  .container_dos {
+    background-color: #f1f1f1;
+    padding: 0px 30px 60px;
+  }
+  .for_deb {
+    display: flex;
+    flex-flow: row;
+
+  }
+  .fortalezas {
+    margin-bottom: 30px;
+    padding-right: 25px;
+  }
+  .debilidades {
+    padding-left: 20px;
+  }
+  .fortalezas, .debilidades {
+    padding-top: 5px;
+  }
+  .container_tres {
+    background-color: #fff;
+    margin: 45px 8rem 0;
+    padding: 0px 15px 0px;
+  }
+  .container_tres .title {
+    text-align: center;
+    color: #099D8D;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+  }
+  .date_person {
+    display: flex;
+    justify-content: center;
     align-items: stretch;
     padding-bottom: 10px;
     margin: 45px 0 60px;
@@ -312,16 +544,18 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    width: 439px;
   }
-  .name {
+  .datos {
     text-align: left;
+  }
+  .datos span {
     color: #000000;
     font-family: 'OpenSans-Regular', sans-serif;
     font-size: 20px;
   }
   .datos p {
-    margin: 0;
-    text-align: left;
+    margin-top: 10px;
     color: #54585A;
     font-family: 'OpenSans-Regular', sans-serif;
     font-size: 16px;
@@ -354,25 +588,23 @@ body {
   footer {
     background-color: #ffffff;
     margin: 0 15px 0;
-    padding: 0 15px 60px;
+    padding: 0 8rem 60px;
     display: flex;
     justify-content: space-between;
   }
   .name_team {
-    color: #B8B8B9;
-    margin-top: 22px;
+    color: #54585a;
+    margin-top: 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
   }
   .links {
     display: flex;
     flex-flow: column;
-    margin-top: 17px;
+    margin-top: 25px;
   }
   .links a{
     text-decoration: none;
-    color: #b8b8b9;
+    color: #54585a;
 
   }
-
-}
